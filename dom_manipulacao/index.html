@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Título da Página</title>
+  <!-- Integração com o CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
-
+<body>
 
 <title>Manipulação do DOM</title>
-- DOM - Document Object Model
+<p>- DOM - Document Object Model</p>
 
 <h1>Fundação de Ensino de Contagem</h1>
 
@@ -25,22 +25,34 @@
 
 <p>
 - Este é um parágrafo que será utilizado nos exercícios.
-
-<p>UM PARÁGRAFO
-- Este é um texto com a classe destaque.
-
-TRÊS CAIXAS - cada uma delas contendo:
-SUBTITULO(3)- Caixa #(número de 1 a 3)
-PARÁGRAFO- Conteúdo da #ª(ordem da caixa) caixa.
-DOIS BOTÕES
-<button>Botão secundário</button>
-<button>Botão principal</button>
-
 </p>
 
- <h3>Lista de tecnologias</h3>
+<p class="destaque">
+Este é um texto com a classe destaque.</p>
 
- <h3>UMA LISTA NÃO ORDENADA</h3>
+<p>TRÊS CAIXAS - cada uma delas contendo:</p>
+<div>
+  <h3>Caixa #1</h3>
+  <p>Conteúdo da 1ª caixa.</p>
+  <button>Botão secundário</button>
+  <button>Botão principal</button>
+</div>
+<div>
+  <h3>Caixa #2</h3>
+  <p>Conteúdo da 2ª caixa.</p>
+  <button>Botão secundário</button>
+  <button>Botão principal</button>
+</div>
+<div>
+  <h3>Caixa #3</h3>
+  <p>Conteúdo da 3ª caixa.</p>
+  <button>Botão secundário</button>
+  <button>Botão principal</button>
+</div>
+
+<h3>Lista de tecnologias</h3>
+
+<h3>UMA LISTA NÃO ORDENADA</h3>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
@@ -48,13 +60,14 @@ DOIS BOTÕES
   <li>TypeScript</li>
   <li>PHP</li>
   <li>Rust</li>
+</ul>
 
- <h2>Imagem</h2>
+<h2>Imagem</h2>
 
-UMA IMAGEM
-- [pequena imagem de sua preferencia]
+<p>UMA IMAGEM</p>
+<img src="https://via.placeholder.com/150" alt="Pequena imagem de preferência">
 
- <h3>Formulário</h3>
+<h3>Formulário</h3>
 
 <form>
   <label for="fname">First name:</label><br>
@@ -70,19 +83,18 @@ UMA IMAGEM
   </select>
 </form>
 
-     <select id="curso">  
-     <option value="">Selecione</option>   
-     <option value="HTML">HTML</option>
-     <option value="CSS">CSS</option>
-      <option value="JavaScript">JavaScript</option>
-      </select>
-<!-- label --> 
-- textarea
+<select id="curso2">  
+  <option value="">Selecione</option>   
+  <option value="HTML">HTML</option>
+  <option value="CSS">CSS</option>
+  <option value="JavaScript">JavaScript</option>
+</select>
+<br>
+<label for="mensagem">Mensagem:</label><br>
+<textarea id="mensagem" name="mensagem"></textarea><br>
 <button>Enviar</button>
 
-
 <h2>Tabela de alunos</h2>
-
 
 <table>
   <tr>
@@ -110,3 +122,8 @@ UMA IMAGEM
 <p>
 - Curso de Frontend - Manipulação do DOM
 </p>
+
+<!-- Integração com o JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
